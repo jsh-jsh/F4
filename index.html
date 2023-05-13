@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SY F4</title>
+<style type="text/css">
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    list-style: none;
+}
+.line-year{
+    position: absolute;
+    color: #189cfb;
+    font-size: 20px;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-4px);
+}
+
+#list {
+    margin: 0 4px 0;
+    margin-left: 100px;
+}
+
+#list>li{
+    position: relative;
+    padding-left: 40px;
+    padding-top: 4px;
+}
+
+#list img {
+    height: 80px;
+    margin-top: 5px;
+}
+/*左侧边线*/
+
+#list>li:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    left: 19px;
+    z-index: 1;
+}
+
+#list>li:first-child:before {
+    height: 50%;
+    top: 50%;
+}
+
+#list>li:last-child:before {
+    height: 50%;
+}
+
+/*小灰点*/
+#list>li:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #aaa;
+    border-radius: 50%;
+    left: 16px;
+    top: 50%;
+    margin-top: -2px;
+    z-index: 1;
+}
+
+/*蓝色圆点*/
+#list>li.line-active:after {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    background-color: #3d93fd;
+    border: 4px solid #88bdfe;
+    border-radius: 8px;
+    left: 12px;
+    box-shadow: 0 0 0 3px #d8e9ff;
+    z-index: 2;
+}
+.list-out {
+    padding: 10px;
+}
+.list-time {
+    color: #cacaca;
+}
+.list-content div{
+    min-height: 30px;
+}
+.purple{
+    color: #884888;
+}
+.red{
+    color: #f00;
+}
+</style>
+</head>
+<body>
+<ul id="list">
+    <li class="line-active">
+        <div class="list-out">
+            <div class="list-time">
+                2021-08-30 8:00
+            </div> 
+            <div class="line-year">
+                2021
+            </div> 
+            <div class="list-content">
+                First
+                <br /> 
+                <p class="fc666 fsize15 padtop5">JSH,QYX,WHR,LCH 第一次见面。</p> 
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="list-out">
+            <div class="list-time">
+                2021-09
+            </div> 
+            <div class="list-content">
+                初相识
+                <br /> 
+                <p class="fc666 fsize15 padtop5">JSH 和 WHR 的关系逐渐升温，QYX 和 LCH 也是如此。</p> 
+            </div>
+        </div>
+    </div>
+    <li>
+        <div class="list-out">
+            <div class="list-time">
+                2022-01
+            </div> 
+            <div class="list-content">
+                好诶
+                <br /> 
+                <p class="fc666 fsize15 padtop5">JSH、WHR、QYX 形成了一个小团体，可怜的 LCH 此时还没有加入（摸摸 </p> 
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="list-out">
+            <div class="list-time">
+                2022-02
+            </div> 
+            <div class="list-content">
+                成就达成：二人聚会
+                <br /> 
+                <p class="fc666 fsize15 padtop5">JSH、WHR 第一次一起出去玩</p> 
+            </div>
+        </div>
+    </li>
+    <li class="line-active">
+        <div class="list-out">
+            <div class="list-time">
+                2022-03
+            </div> 
+            <div class="line-year red">
+                2022
+            </div> 
+            <div class="list-content">
+                趋势
+                <br /> 
+                <p class="fc666 fsize15 padtop5">四个人开始形影不离（当然也经常一块被老师批评</p> 
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="list-out">
+            <div class="list-time">
+                2022-05
+            </div> 
+            <div class="list-content">
+                赌注：成绩 
+                <br /> 
+                <p class="fc666 fsize15 padtop5">JSH、WHR、QYX 形成了某种良好的风气（可怜的 LCH 又被排除在外了</p> 
+            </div>
+        </div>
+    </div>
+    <li>
+        <div class="list-out">
+            <div class="list-time">
+                2022-04/05
+            </div> 
+            <div class="list-content">
+                成就：三人聚会 
+                <br /> 
+                <p class="fc666 fsize15 padtop5">三个人也逐渐开始经常出去玩耍</p> 
+            </div>
+        </div>
+    </li>
+    <li class="line-active">
+        <div class="list-out">
+            <div class="list-time">
+                2022-07
+            </div> 
+            <div class="list-content">
+                WHR 赢得了赌注
+                <br /> 
+                <p class="fc666 fsize15 padtop5">JSH 由于某种神秘原因输掉了这次打赌，不过以另外的方式获得了补偿</p> 
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="list-out">
+            <div class="list-time">
+                2022-09
+            </div> 
+            <div class="list-content">
+                功德圆满
+                <br /> 
+                <p class="fc666 fsize15 padtop5">F4 成立</p> 
+            </div>
+        </div>
+    </div>
+</ul>
+</body>
+</html>
